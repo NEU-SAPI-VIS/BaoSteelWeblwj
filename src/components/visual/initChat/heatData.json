@@ -1,0 +1,1181 @@
+{
+  "upid": "21312064000",
+  "platetype": "BSM48C",
+  "outOfGau": [
+    {
+      "name": "charging_temp_act",
+      "value": 0.0
+    },
+    {
+      "name": "tgtplatelength2",
+      "value": -0.0874
+    },
+    {
+      "name": "tgtplatethickness2",
+      "value": 0.0824
+    },
+    {
+      "name": "tgtwidth",
+      "value": 0.0
+    },
+    {
+      "name": "slab_length",
+      "value": 0.0
+    },
+    {
+      "name": "slab_thickness",
+      "value": 0.0
+    },
+    {
+      "name": "slab_weight_act",
+      "value": 0.0
+    },
+    {
+      "name": "slab_width",
+      "value": 0.0
+    },
+    {
+      "name": "ave_temp_1",
+      "value": -0.2391
+    },
+    {
+      "name": "ave_temp_2",
+      "value": -0.4557
+    },
+    {
+      "name": "ave_temp_dis",
+      "value": -0.202
+    },
+    {
+      "name": "ave_temp_pre",
+      "value": -0.1684
+    },
+    {
+      "name": "ave_temp_soak",
+      "value": -0.4622
+    },
+    {
+      "name": "ave_temp_entry_1",
+      "value": -0.2061
+    },
+    {
+      "name": "ave_temp_entry_2",
+      "value": -0.3066
+    },
+    {
+      "name": "ave_temp_entry_pre",
+      "value": -0.0961
+    },
+    {
+      "name": "ave_temp_entry_soak",
+      "value": -0.5252
+    },
+    {
+      "name": "center_temp_dis",
+      "value": -0.3358
+    },
+    {
+      "name": "center_temp_entry_1",
+      "value": -0.2208
+    },
+    {
+      "name": "center_temp_entry_2",
+      "value": -0.3089
+    },
+    {
+      "name": "center_temp_entry_pre",
+      "value": -0.1031
+    },
+    {
+      "name": "center_temp_entry_soak",
+      "value": -0.5762
+    },
+    {
+      "name": "temp_uniformity_dis",
+      "value": 0.5476
+    },
+    {
+      "name": "temp_uniformity_entry_1",
+      "value": 0.2236
+    },
+    {
+      "name": "temp_uniformity_entry_2",
+      "value": 0.307
+    },
+    {
+      "name": "temp_uniformity_entry_pre",
+      "value": 0.0093
+    },
+    {
+      "name": "temp_uniformity_entry_soak",
+      "value": 0.3957
+    },
+    {
+      "name": "skid_temp_dis",
+      "value": -0.1959
+    },
+    {
+      "name": "skid_temp_entry_1",
+      "value": -0.204
+    },
+    {
+      "name": "skid_temp_entry_2",
+      "value": -0.2939
+    },
+    {
+      "name": "skid_temp_entry_pre",
+      "value": -0.0947
+    },
+    {
+      "name": "skid_temp_entry_soak",
+      "value": -0.5177
+    },
+    {
+      "name": "staying_time_1",
+      "value": -0.25
+    },
+    {
+      "name": "staying_time_2",
+      "value": -0.2202
+    },
+    {
+      "name": "staying_time_pre",
+      "value": -0.2518
+    },
+    {
+      "name": "staying_time_soak",
+      "value": 0.0
+    },
+    {
+      "name": "sur_temp_dis",
+      "value": 0.1414
+    },
+    {
+      "name": "sur_temp_entry_1",
+      "value": -0.0587
+    },
+    {
+      "name": "sur_temp_entry_2",
+      "value": 0.0
+    },
+    {
+      "name": "sur_temp_entry_pre",
+      "value": -0.0547
+    },
+    {
+      "name": "sur_temp_entry_soak",
+      "value": 0.0
+    },
+    {
+      "name": "meas_temp_0",
+      "value": 0.0
+    },
+    {
+      "name": "meas_temp_1",
+      "value": 0.0
+    },
+    {
+      "name": "meas_temp_10",
+      "value": 0.0
+    },
+    {
+      "name": "meas_temp_11",
+      "value": 0.0
+    },
+    {
+      "name": "meas_temp_12",
+      "value": 0.0
+    },
+    {
+      "name": "meas_temp_13",
+      "value": 0.0
+    },
+    {
+      "name": "meas_temp_14",
+      "value": 0.0
+    },
+    {
+      "name": "meas_temp_15",
+      "value": 0.0
+    },
+    {
+      "name": "meas_temp_16",
+      "value": 0.0
+    },
+    {
+      "name": "meas_temp_17",
+      "value": 0.0
+    },
+    {
+      "name": "meas_temp_18",
+      "value": 0.0
+    },
+    {
+      "name": "meas_temp_19",
+      "value": 0.0
+    },
+    {
+      "name": "meas_temp_2",
+      "value": 0.0
+    },
+    {
+      "name": "meas_temp_3",
+      "value": 0.0
+    },
+    {
+      "name": "meas_temp_4",
+      "value": 0.0
+    },
+    {
+      "name": "meas_temp_5",
+      "value": 0.0
+    },
+    {
+      "name": "meas_temp_6",
+      "value": 0.0
+    },
+    {
+      "name": "meas_temp_7",
+      "value": 0.0
+    },
+    {
+      "name": "meas_temp_8",
+      "value": 0.0
+    },
+    {
+      "name": "meas_temp_9",
+      "value": 0.0
+    },
+    {
+      "name": "t_0",
+      "value": 0.1414
+    },
+    {
+      "name": "t_1",
+      "value": -0.0787
+    },
+    {
+      "name": "t_2",
+      "value": -0.3153
+    },
+    {
+      "name": "t_3",
+      "value": -0.3358
+    },
+    {
+      "name": "t_4",
+      "value": -0.3045
+    },
+    {
+      "name": "t_5",
+      "value": -0.1606
+    },
+    {
+      "name": "t_6",
+      "value": 0.0
+    },
+    {
+      "name": "pass",
+      "value": 0.0
+    },
+    {
+      "name": "crownbody",
+      "value": 0.1589
+    },
+    {
+      "name": "crownhead",
+      "value": 0.1798
+    },
+    {
+      "name": "crowntail",
+      "value": 0.0
+    },
+    {
+      "name": "crowntotal",
+      "value": 0.0945
+    },
+    {
+      "name": "devcrownbody",
+      "value": 0.0
+    },
+    {
+      "name": "devcrownhead",
+      "value": 0.1316
+    },
+    {
+      "name": "devcrowntail",
+      "value": 0.0
+    },
+    {
+      "name": "devcrowntotal",
+      "value": 0.0
+    },
+    {
+      "name": "devfinishtempbody",
+      "value": 0.0
+    },
+    {
+      "name": "devfinishtemphead",
+      "value": 0.0
+    },
+    {
+      "name": "devfinishtemptail",
+      "value": 0.0
+    },
+    {
+      "name": "devfinishtemptotal",
+      "value": 0.0
+    },
+    {
+      "name": "wedgebody",
+      "value": -0.1404
+    },
+    {
+      "name": "wedgehead",
+      "value": 0.2393
+    },
+    {
+      "name": "wedgetotal",
+      "value": -0.1118
+    },
+    {
+      "name": "devwedgebody",
+      "value": 0.1383
+    },
+    {
+      "name": "devwedgehead",
+      "value": 0.081
+    },
+    {
+      "name": "devwedgetail",
+      "value": 0.0
+    },
+    {
+      "name": "devwedgetotal",
+      "value": 0.1156
+    },
+    {
+      "name": "finishtempbody",
+      "value": 0.0
+    },
+    {
+      "name": "finishtemphead",
+      "value": 0.0
+    },
+    {
+      "name": "finishtemptail",
+      "value": 0.0
+    },
+    {
+      "name": "finishtemptotal",
+      "value": 0.0
+    }
+  ],
+  "train_len": 363,
+  "CONTJ": [
+    {
+      "name": "charging_temp_act",
+      "value": 0.0833
+    },
+    {
+      "name": "tgtplatelength2",
+      "value": 0.085
+    },
+    {
+      "name": "tgtplatethickness2",
+      "value": 0.0019
+    },
+    {
+      "name": "tgtwidth",
+      "value": 0.0363
+    },
+    {
+      "name": "slab_length",
+      "value": 0.0311
+    },
+    {
+      "name": "slab_thickness",
+      "value": 0.0121
+    },
+    {
+      "name": "slab_weight_act",
+      "value": 0.0385
+    },
+    {
+      "name": "slab_width",
+      "value": 0.0112
+    },
+    {
+      "name": "ave_temp_1",
+      "value": 0.7411
+    },
+    {
+      "name": "ave_temp_2",
+      "value": 1.0
+    },
+    {
+      "name": "ave_temp_dis",
+      "value": 0.0339
+    },
+    {
+      "name": "ave_temp_pre",
+      "value": 0.4187
+    },
+    {
+      "name": "ave_temp_soak",
+      "value": 0.2649
+    },
+    {
+      "name": "ave_temp_entry_1",
+      "value": 0.5167
+    },
+    {
+      "name": "ave_temp_entry_2",
+      "value": 0.7852
+    },
+    {
+      "name": "ave_temp_entry_pre",
+      "value": 0.3037
+    },
+    {
+      "name": "ave_temp_entry_soak",
+      "value": 0.5438
+    },
+    {
+      "name": "center_temp_dis",
+      "value": 0.1645
+    },
+    {
+      "name": "center_temp_entry_1",
+      "value": 0.5566
+    },
+    {
+      "name": "center_temp_entry_2",
+      "value": 0.7889
+    },
+    {
+      "name": "center_temp_entry_pre",
+      "value": 0.317
+    },
+    {
+      "name": "center_temp_entry_soak",
+      "value": 0.7342
+    },
+    {
+      "name": "temp_uniformity_dis",
+      "value": 0.4555
+    },
+    {
+      "name": "temp_uniformity_entry_1",
+      "value": 0.2741
+    },
+    {
+      "name": "temp_uniformity_entry_2",
+      "value": 0.838
+    },
+    {
+      "name": "temp_uniformity_entry_pre",
+      "value": 0.0153
+    },
+    {
+      "name": "temp_uniformity_entry_soak",
+      "value": 0.4461
+    },
+    {
+      "name": "skid_temp_dis",
+      "value": 0.0334
+    },
+    {
+      "name": "skid_temp_entry_1",
+      "value": 0.5124
+    },
+    {
+      "name": "skid_temp_entry_2",
+      "value": 0.7679
+    },
+    {
+      "name": "skid_temp_entry_pre",
+      "value": 0.3003
+    },
+    {
+      "name": "skid_temp_entry_soak",
+      "value": 0.5215
+    },
+    {
+      "name": "staying_time_1",
+      "value": 0.3293
+    },
+    {
+      "name": "staying_time_2",
+      "value": 0.1683
+    },
+    {
+      "name": "staying_time_pre",
+      "value": 0.2306
+    },
+    {
+      "name": "staying_time_soak",
+      "value": 0.004
+    },
+    {
+      "name": "sur_temp_dis",
+      "value": 0.1067
+    },
+    {
+      "name": "sur_temp_entry_1",
+      "value": 0.2192
+    },
+    {
+      "name": "sur_temp_entry_2",
+      "value": 0.0144
+    },
+    {
+      "name": "sur_temp_entry_pre",
+      "value": 0.2462
+    },
+    {
+      "name": "sur_temp_entry_soak",
+      "value": 0.0472
+    },
+    {
+      "name": "meas_temp_0",
+      "value": 0.0086
+    },
+    {
+      "name": "meas_temp_1",
+      "value": 0.0086
+    },
+    {
+      "name": "meas_temp_10",
+      "value": 0.0493
+    },
+    {
+      "name": "meas_temp_11",
+      "value": 0.055
+    },
+    {
+      "name": "meas_temp_12",
+      "value": 0.0574
+    },
+    {
+      "name": "meas_temp_13",
+      "value": 0.0444
+    },
+    {
+      "name": "meas_temp_14",
+      "value": 0.0289
+    },
+    {
+      "name": "meas_temp_15",
+      "value": 0.0156
+    },
+    {
+      "name": "meas_temp_16",
+      "value": 0.0093
+    },
+    {
+      "name": "meas_temp_17",
+      "value": 0.0061
+    },
+    {
+      "name": "meas_temp_18",
+      "value": 0.0051
+    },
+    {
+      "name": "meas_temp_19",
+      "value": 0.0102
+    },
+    {
+      "name": "meas_temp_2",
+      "value": 0.0021
+    },
+    {
+      "name": "meas_temp_3",
+      "value": 0.0068
+    },
+    {
+      "name": "meas_temp_4",
+      "value": 0.0118
+    },
+    {
+      "name": "meas_temp_5",
+      "value": 0.0142
+    },
+    {
+      "name": "meas_temp_6",
+      "value": 0.0178
+    },
+    {
+      "name": "meas_temp_7",
+      "value": 0.0272
+    },
+    {
+      "name": "meas_temp_8",
+      "value": 0.0356
+    },
+    {
+      "name": "meas_temp_9",
+      "value": 0.0399
+    },
+    {
+      "name": "t_0",
+      "value": 0.1067
+    },
+    {
+      "name": "t_1",
+      "value": 0.0203
+    },
+    {
+      "name": "t_2",
+      "value": 0.1088
+    },
+    {
+      "name": "t_3",
+      "value": 0.1645
+    },
+    {
+      "name": "t_4",
+      "value": 0.0625
+    },
+    {
+      "name": "t_5",
+      "value": 0.0917
+    },
+    {
+      "name": "t_6",
+      "value": 0.0659
+    },
+    {
+      "name": "pass",
+      "value": 0.0056
+    },
+    {
+      "name": "crownbody",
+      "value": 0.0703
+    },
+    {
+      "name": "crownhead",
+      "value": 0.106
+    },
+    {
+      "name": "crowntail",
+      "value": 0.0366
+    },
+    {
+      "name": "crowntotal",
+      "value": 0.0969
+    },
+    {
+      "name": "devcrownbody",
+      "value": 0.0035
+    },
+    {
+      "name": "devcrownhead",
+      "value": 0.0249
+    },
+    {
+      "name": "devcrowntail",
+      "value": 0.0134
+    },
+    {
+      "name": "devcrowntotal",
+      "value": 0.0
+    },
+    {
+      "name": "devfinishtempbody",
+      "value": 0.0231
+    },
+    {
+      "name": "devfinishtemphead",
+      "value": 0.0105
+    },
+    {
+      "name": "devfinishtemptail",
+      "value": 0.0117
+    },
+    {
+      "name": "devfinishtemptotal",
+      "value": 0.0167
+    },
+    {
+      "name": "wedgebody",
+      "value": 0.0247
+    },
+    {
+      "name": "wedgehead",
+      "value": 0.0017
+    },
+    {
+      "name": "wedgetotal",
+      "value": 0.0164
+    },
+    {
+      "name": "devwedgebody",
+      "value": 0.0001
+    },
+    {
+      "name": "devwedgehead",
+      "value": 0.0086
+    },
+    {
+      "name": "devwedgetail",
+      "value": 0.0012
+    },
+    {
+      "name": "devwedgetotal",
+      "value": 0.0024
+    },
+    {
+      "name": "finishtempbody",
+      "value": 0.0218
+    },
+    {
+      "name": "finishtemphead",
+      "value": 0.0224
+    },
+    {
+      "name": "finishtemptail",
+      "value": 0.0218
+    },
+    {
+      "name": "finishtemptotal",
+      "value": 0.0218
+    }
+  ],
+  "CONTQ": [
+    {
+      "name": "charging_temp_act",
+      "value": 0.01
+    },
+    {
+      "name": "tgtplatelength2",
+      "value": 0.0298
+    },
+    {
+      "name": "tgtplatethickness2",
+      "value": 0.0135
+    },
+    {
+      "name": "tgtwidth",
+      "value": 0.0041
+    },
+    {
+      "name": "slab_length",
+      "value": 0.0261
+    },
+    {
+      "name": "slab_thickness",
+      "value": 0.1397
+    },
+    {
+      "name": "slab_weight_act",
+      "value": 0.0534
+    },
+    {
+      "name": "slab_width",
+      "value": 0.0444
+    },
+    {
+      "name": "ave_temp_1",
+      "value": 0.0145
+    },
+    {
+      "name": "ave_temp_2",
+      "value": 0.0115
+    },
+    {
+      "name": "ave_temp_dis",
+      "value": 0.0003
+    },
+    {
+      "name": "ave_temp_pre",
+      "value": 0.0015
+    },
+    {
+      "name": "ave_temp_soak",
+      "value": 0.0408
+    },
+    {
+      "name": "ave_temp_entry_1",
+      "value": 0.0015
+    },
+    {
+      "name": "ave_temp_entry_2",
+      "value": 0.0308
+    },
+    {
+      "name": "ave_temp_entry_pre",
+      "value": 0.0046
+    },
+    {
+      "name": "ave_temp_entry_soak",
+      "value": 0.0921
+    },
+    {
+      "name": "center_temp_dis",
+      "value": 0.0
+    },
+    {
+      "name": "center_temp_entry_1",
+      "value": 0.0115
+    },
+    {
+      "name": "center_temp_entry_2",
+      "value": 0.0148
+    },
+    {
+      "name": "center_temp_entry_pre",
+      "value": 0.0001
+    },
+    {
+      "name": "center_temp_entry_soak",
+      "value": 0.0053
+    },
+    {
+      "name": "temp_uniformity_dis",
+      "value": 0.5181
+    },
+    {
+      "name": "temp_uniformity_entry_1",
+      "value": 0.1645
+    },
+    {
+      "name": "temp_uniformity_entry_2",
+      "value": 0.123
+    },
+    {
+      "name": "temp_uniformity_entry_pre",
+      "value": 0.4873
+    },
+    {
+      "name": "temp_uniformity_entry_soak",
+      "value": 0.0603
+    },
+    {
+      "name": "skid_temp_dis",
+      "value": 0.0094
+    },
+    {
+      "name": "skid_temp_entry_1",
+      "value": 0.001
+    },
+    {
+      "name": "skid_temp_entry_2",
+      "value": 0.0454
+    },
+    {
+      "name": "skid_temp_entry_pre",
+      "value": 0.0059
+    },
+    {
+      "name": "skid_temp_entry_soak",
+      "value": 0.0571
+    },
+    {
+      "name": "staying_time_1",
+      "value": 0.026
+    },
+    {
+      "name": "staying_time_2",
+      "value": 0.2548
+    },
+    {
+      "name": "staying_time_pre",
+      "value": 0.8847
+    },
+    {
+      "name": "staying_time_soak",
+      "value": 0.3492
+    },
+    {
+      "name": "sur_temp_dis",
+      "value": 0.2487
+    },
+    {
+      "name": "sur_temp_entry_1",
+      "value": 0.0177
+    },
+    {
+      "name": "sur_temp_entry_2",
+      "value": 0.411
+    },
+    {
+      "name": "sur_temp_entry_pre",
+      "value": 0.1016
+    },
+    {
+      "name": "sur_temp_entry_soak",
+      "value": 0.2581
+    },
+    {
+      "name": "meas_temp_0",
+      "value": 0.0023
+    },
+    {
+      "name": "meas_temp_1",
+      "value": 0.0001
+    },
+    {
+      "name": "meas_temp_10",
+      "value": 0.0002
+    },
+    {
+      "name": "meas_temp_11",
+      "value": 0.0
+    },
+    {
+      "name": "meas_temp_12",
+      "value": 0.0076
+    },
+    {
+      "name": "meas_temp_13",
+      "value": 0.005
+    },
+    {
+      "name": "meas_temp_14",
+      "value": 0.006
+    },
+    {
+      "name": "meas_temp_15",
+      "value": 0.0106
+    },
+    {
+      "name": "meas_temp_16",
+      "value": 0.0128
+    },
+    {
+      "name": "meas_temp_17",
+      "value": 0.0148
+    },
+    {
+      "name": "meas_temp_18",
+      "value": 0.0235
+    },
+    {
+      "name": "meas_temp_19",
+      "value": 0.0001
+    },
+    {
+      "name": "meas_temp_2",
+      "value": 0.0065
+    },
+    {
+      "name": "meas_temp_3",
+      "value": 0.0047
+    },
+    {
+      "name": "meas_temp_4",
+      "value": 0.0148
+    },
+    {
+      "name": "meas_temp_5",
+      "value": 0.0008
+    },
+    {
+      "name": "meas_temp_6",
+      "value": 0.0373
+    },
+    {
+      "name": "meas_temp_7",
+      "value": 0.0152
+    },
+    {
+      "name": "meas_temp_8",
+      "value": 0.0123
+    },
+    {
+      "name": "meas_temp_9",
+      "value": 0.0013
+    },
+    {
+      "name": "t_0",
+      "value": 0.2487
+    },
+    {
+      "name": "t_1",
+      "value": 0.0442
+    },
+    {
+      "name": "t_2",
+      "value": 0.0036
+    },
+    {
+      "name": "t_3",
+      "value": 0.0
+    },
+    {
+      "name": "t_4",
+      "value": 0.006
+    },
+    {
+      "name": "t_5",
+      "value": 0.034
+    },
+    {
+      "name": "t_6",
+      "value": 0.0199
+    },
+    {
+      "name": "pass",
+      "value": 0.0375
+    },
+    {
+      "name": "crownbody",
+      "value": 0.0236
+    },
+    {
+      "name": "crownhead",
+      "value": 0.0762
+    },
+    {
+      "name": "crowntail",
+      "value": 0.0638
+    },
+    {
+      "name": "crowntotal",
+      "value": 0.0124
+    },
+    {
+      "name": "devcrownbody",
+      "value": 0.003
+    },
+    {
+      "name": "devcrownhead",
+      "value": 0.0206
+    },
+    {
+      "name": "devcrowntail",
+      "value": 0.0034
+    },
+    {
+      "name": "devcrowntotal",
+      "value": 0.0019
+    },
+    {
+      "name": "devfinishtempbody",
+      "value": 0.0036
+    },
+    {
+      "name": "devfinishtemphead",
+      "value": 0.146
+    },
+    {
+      "name": "devfinishtemptail",
+      "value": 0.0194
+    },
+    {
+      "name": "devfinishtemptotal",
+      "value": 0.0328
+    },
+    {
+      "name": "wedgebody",
+      "value": 0.0007
+    },
+    {
+      "name": "wedgehead",
+      "value": 1.0
+    },
+    {
+      "name": "wedgetotal",
+      "value": 0.0075
+    },
+    {
+      "name": "devwedgebody",
+      "value": 0.0182
+    },
+    {
+      "name": "devwedgehead",
+      "value": 0.0788
+    },
+    {
+      "name": "devwedgetail",
+      "value": 0.0127
+    },
+    {
+      "name": "devwedgetotal",
+      "value": 0.0293
+    },
+    {
+      "name": "finishtempbody",
+      "value": 0.0167
+    },
+    {
+      "name": "finishtemphead",
+      "value": 0.0168
+    },
+    {
+      "name": "finishtemptail",
+      "value": 0.0139
+    },
+    {
+      "name": "finishtemptotal",
+      "value": 0.0164
+    }
+  ],
+  "upperTotal": 16,
+  "lowerTotal": 32,
+  "upperFive": [
+    {
+      "original_value": 107.0,
+      "original_l": 10.0,
+      "original_u": 38.0,
+      "name": "temp_uniformity_dis"
+    },
+    {
+      "original_value": 255.0,
+      "original_l": 78.0,
+      "original_u": 145.0,
+      "name": "temp_uniformity_entry_soak"
+    },
+    {
+      "original_value": 361.0,
+      "original_l": 181.0,
+      "original_u": 243.0,
+      "name": "temp_uniformity_entry_2"
+    },
+    {
+      "original_value": 0.0016,
+      "original_l": -0.0001,
+      "original_u": 0.0003,
+      "name": "wedgehead"
+    },
+    {
+      "original_value": 294.0,
+      "original_l": 200.0,
+      "original_u": 247.5,
+      "name": "temp_uniformity_entry_1"
+    }
+  ],
+  "lowerFive": [
+    {
+      "original_value": 889.0,
+      "original_l": 1028.5,
+      "original_u": 1071.0,
+      "name": "center_temp_entry_soak"
+    },
+    {
+      "original_value": 976.0,
+      "original_l": 1067.0,
+      "original_u": 1096.0,
+      "name": "ave_temp_entry_soak"
+    },
+    {
+      "original_value": 968.0,
+      "original_l": 1058.0,
+      "original_u": 1087.0,
+      "name": "skid_temp_entry_soak"
+    },
+    {
+      "original_value": 1021.0,
+      "original_l": 1076.0,
+      "original_u": 1097.5,
+      "name": "ave_temp_soak"
+    },
+    {
+      "original_value": 857.0,
+      "original_l": 965.0,
+      "original_u": 1011.0,
+      "name": "ave_temp_2"
+    }
+  ]
+}

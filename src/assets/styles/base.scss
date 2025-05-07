@@ -88,6 +88,7 @@ a {
   color: #7e8c8d;
   text-decoration: none;
   -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 ::-webkit-scrollbar {
   width: 10px;

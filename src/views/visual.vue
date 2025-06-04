@@ -5,7 +5,7 @@
       <el-col :span="4" class=" left-col">
         <!-- 第一个控制面板 -->
         <el-row class="my-card-light">
-          <div class="panel-title my-card-title">时间选择</div>
+          <div class="panel-title my-card-title">Control Panel</div>
           <div class="select-outside">
             <div class="select-title">
               月份选择
@@ -76,7 +76,7 @@
           </div>
         </el-row>
       </el-col>
-      <el-col :span="20" class="right-col">
+      <el-col :span="16" class="right-col">
         <!-- 时间总览视图 -->
         <el-row class="my-card-light chart-div">
           <div class="my-card-title">
@@ -115,6 +115,16 @@
                 <diaChart ref="diaChart"></diaChart>
               </div>
             </div>
+          </div>
+        </el-row>
+      </el-col>
+      <el-col :span="4" class="detail-col">
+        <el-row class="my-card-light chart-div">
+          <div class="my-card-title">
+            <div class="title-right">Detail View</div>
+          </div>
+          <div class="detail-view">
+            <p>这里是详细信息展示区。</p>
           </div>
         </el-row>
       </el-col>
@@ -652,9 +662,11 @@ $button-color: #6287a6;
     padding: 5px 0 0 5px;
     .panel-title {
       text-align: center;
-      font-size: 14px;
+      font-size: 18px;
       font-weight: bold;
       vertical-align: middle;
+      display: flex;
+      justify-content: left;
 
       // margin: 0 auto;
     }

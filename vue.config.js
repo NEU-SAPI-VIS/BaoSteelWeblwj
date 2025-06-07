@@ -14,7 +14,8 @@ module.exports = {
       "/pidasApi": {
         // target: "http://219.216.80.146:7011",
         // target: "http://localhost:5001",
-        target: "http://172.20.110.176:5005",
+        // target: "http://172.20.110.176:5005",
+        target: "http://172.29.175.6:5001/",
         changeOrigin: true,
       },
     },

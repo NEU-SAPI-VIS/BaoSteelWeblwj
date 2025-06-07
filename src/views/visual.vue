@@ -8,58 +8,16 @@
           <div class="panel-title my-card-title">Control Panel</div>
           <div class="select-outside">
             <div class="select-title">
-              月份选择
+              Slect Month
             </div>
             <div class="select-input">
-              <el-date-picker class="my-date-picker" v-model="monthPickDate" type="month" placeholder="Pick a month" size="mini">
+              <el-date-picker class="my-date-picker" v-model="monthPickDate" type="month" placeholder="Select" size="mini" @change = "paintTimeChart">
               </el-date-picker>
             </div>
+            <!-- <div>
+              <el-button class="my-button" size="mini" @click="paintTimeChart">Query</el-button>
+            </div> -->
           </div>
-          <!-- 统计间隔 -->
-          <div class="select-outside">
-            <div class="select-title">
-              统计间隔
-            </div>
-            <div class="select-input">
-              <el-select v-model="intervalHour" filterable placeholder="请选择" size="mini" class="my-date-picker ">
-                <el-option v-for="item in selectInterval" :key="item.value" :label="item.label" :value="item.value">
-                </el-option>
-              </el-select>
-            </div>
-          </div>
-          <!-- 精度选择 -->
-          <div class="select-outside">
-            <div class="select-title">
-              精度选择
-            </div>
-            <div class="select-input">
-              <el-select v-model="thickRule" filterable placeholder="请选择" size="mini" class="my-date-picker ">
-                <el-option v-for="item in selectOptions" :key="item.value" :label="item.label" :value="item.value">
-                </el-option>
-              </el-select>
-            </div>
-          </div>
-          <!-- 查询按钮 -->
-          <div class="select-outside">
-            <el-button class="my-button" size="mini" @click="paintTimeChart">查询</el-button>
-          </div>
-        </el-row>
-        <!-- 第二个控制面板 -->
-        <el-row class="my-card-light " style="margin-top:10px">
-          <div class="panel-title my-card-title">参数选择</div>
-          <!-- 聚类规则选择 -->
-          <div class="select-outside">
-            <div class="select-title">
-              聚类规则
-            </div>
-            <div class="select-input">
-              <el-select v-model="ruleShow" filterable placeholder="请选择" size="mini" class="my-slider ">
-                <el-option v-for="item in ruleOptions" :key="item.value" :label="item.label" :value="item.value">
-                </el-option>
-              </el-select>
-            </div>
-          </div>
-          <!-- 统计间隔 -->
           <div v-show="ruleShow">
             <div class="select-outside" v-for="(item,index) in reqArr" :key="item.name">
               <div class="select-title">{{item.name}}
@@ -68,11 +26,19 @@
                 <el-slider v-model="item.gap" :step="item.interval" style="width:70%;" :format-tooltip="formatTooltip[index]" :min="item.min" :max="item.max"></el-slider>
               </div>
             </div>
+            <div class="select-outside">
+              <el-button class="my-button" size="mini" @click="paintSeriesChart($event ,2)">聚类</el-button>
+            </div>
           </div>
+        </el-row>
+        <!-- 第二个控制面板 -->
+        <el-row class="my-card-light " style="margin-top:10px">
+          <div class="panel-title my-card-title">Embedding View</div>
+          <!-- 聚类规则选择 -->
           <!-- 精度选择 -->
           <!-- 诊断选择 -->
-          <div class="select-outside">
-            <el-button class="my-button" size="mini" @click="paintSeriesChart($event ,2)">聚类</el-button>
+          <div>
+            sandiantu
           </div>
         </el-row>
       </el-col>
@@ -80,7 +46,7 @@
         <!-- 时间总览视图 -->
         <el-row class="my-card-light chart-div">
           <div class="my-card-title">
-            <div class="title-right">厚度质量概览视图</div>
+            <div class="title-right">Monitoring View</div>
           </div>
           <!-- <time-brush ref="timeChart" className="echarts" @timeBrushed='getGanttData'></time-brush> -->
           <div class="time-chart">
@@ -186,6 +152,8 @@ export default {
   data() {
     return {
       // 加热的option
+      intervalHour: 6,         // 默认统计间隔6h
+      thickRule: 0.003,         // 默认精度宽松(0.003)
       heatOption: [
         { text: "上部炉温均值" },
         { text: "下部炉温均值" },
@@ -207,7 +175,7 @@ export default {
       rollVis: false,
       // 冷却的option
       coollVis: false,
-       coolOption: [
+      coolOption: [
         { text: "Scanner",},
         {text: "p1", },
         {text: "p2",},
@@ -267,7 +235,7 @@ export default {
       }],
       thickRule: 0.003,
       // 聚类选择
-      ruleShow: false,
+      ruleShow: true,
       ruleOptions: [{
         value: true,
         label: '网格划分'
@@ -277,7 +245,7 @@ export default {
       }],
       // 网格划分参数
       reqArr: [{
-        name: '板坯厚度 ',
+        name: 'Slab Thick',
         en: 'slabthickness',
         val: 0,
         gap: 100,
@@ -287,7 +255,7 @@ export default {
         unit: "mm",
         checked: false
       }, {
-        name: '出炉温度 ',
+        name: 'Discharge Temp',
         en: 'tgtdischargetemp',
         val: 0,
         gap: 10,
@@ -297,7 +265,7 @@ export default {
         unit: "°C",
       },
       {
-        name: '目标厚度 ',
+        name: 'Target Thick',
         en: 'tgtplatethickness',
         val: 0,
         gap: 2,
@@ -307,7 +275,7 @@ export default {
         unit: "mm",
 
       }, {
-        name: '目标宽度 ',
+        name: 'Target Width',
         en: 'tgtwidth',
         val: 0,
         gap: 1000,
@@ -317,7 +285,7 @@ export default {
         unit: "mm",
 
       }, {
-        name: '目标长度 ',
+        name: 'Target Length',
         en: 'tgtplatelength2',
         val: 0,
         gap: 30,
@@ -325,20 +293,16 @@ export default {
         max: 30,
         interval: 1,
         unit: "m",
-
-
-      }, {
-        name: '终轧温度 ',
+      },
+      {
+        name: 'Target Temp',
         en: 'tgttmplatetemp',
         val: 0,
         gap: 10,
         min: 5,
         max: 100,
         interval: 5,
-        unit: "°C",
-
-
-      }],
+        unit: "°C",}],
       bidReq: {
         'startBid': null,
         'endBid': null,
@@ -346,7 +310,7 @@ export default {
         'smode': 'A'
       },
       // 翻转控制按钮
-      invertValue: false,
+      invertValue: true,
       // 双击的规格的bid，cid
       bid_cid: null,
       // 双击的钢种
@@ -458,7 +422,7 @@ export default {
     async getCoolData(upid) {
       this.coollVis = true
       let requestParams = { "upid": upid ? upid : "20702018000" };
-         await processRequest.getCoolingDetails(requestParams).then((res) => {
+        await processRequest.getCoolingDetails(requestParams).then((res) => {
         let resObj = JSON.parse(res)[0]
         for (let i of ['p1', 'p2', 'p3', 'p4', 'p6']) {
           this.coolData[i] = {
@@ -604,20 +568,15 @@ export default {
       },
         postParams = { platetype: this.plateType }
       d3.select('#recommendSvg') && d3.select('#recommendSvg').remove();
-     if (this.recommendsView) {
-       let res = await processRequest.getRecommendData(requesParams, postParams)
+      if (this.recommendsView) {
+        let res = await processRequest.getRecommendData(requesParams, postParams)
         this.$refs.recommendsChart.paintRecommendChart(res)
-     } 
+      } 
 
     }
   },
   mounted() {
-    // this.diaData = diaData;
-    // this.$nextTick(() => {
-    //   for (let i = 0; i < this.diaData.length; i++) {
-    //     this.$refs.diaChart[i].paintAllChart(this.diaData[i])
-    //   }
-    // });
+    this.paintTimeChart();
 
   },
 
@@ -643,7 +602,7 @@ $button-color: #6287a6;
     background-color: #f7f7f7;
     font-weight: bold;
     text-align: center;
-    font-size: 14px;
+    font-size: 18px;
     color: #6d7885;
     height: 30px;
     padding: 0px 5px;
@@ -672,23 +631,23 @@ $button-color: #6287a6;
     }
 
     .select-outside {
-      padding: 10px;
+      padding: 5px;
       display: flex;
       justify-content: center;
       font-size: 12px;
       align-items: center;
       .select-title {
-        width: 30%;
+        width: 40%;
         font-weight: bold;
-        text-align: right;
-        margin-right: 20px;
+        text-align: left;
+        margin-right: 8px;
       }
       .select-input {
-        width: 70%;
+        width: 60%;
         text-align: left;
         .my-date-picker {
           font-size: 14px;
-          width: 80%;
+          width: 70%;
         }
       }
       .my-button {
@@ -701,7 +660,7 @@ $button-color: #6287a6;
     }
     .right-col {
       .title-right {
-        margin-left: auto;
+        margin-right: auto;
       }
       .chart-div {
         margin-bottom: 7px;

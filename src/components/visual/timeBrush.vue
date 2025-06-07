@@ -142,7 +142,7 @@ export default {
     return {
       id: 'timeChart-' + Math.random().toString(32).substr(2),
       svg: null,         // 持有 D3 SVG 实例
-      margin: { top: 10, right: 5, bottom: 5, left: 5 },
+      margin: { top: 20, right: 5, bottom: 5, left: 5 },
       width: 0,
       height: 0,
       debounceTimer: null
@@ -223,7 +223,6 @@ export default {
         .domain(categories)
         .range([0, this.width])
         .paddingInner(0.1)
-        // .padding(0.01);
         .paddingOuter(0.05);
 
       // Y 轴：linear scale，domain 从 0 到 所有堆叠之和的最大值
@@ -237,6 +236,17 @@ export default {
         .domain(seriesNames)
         .range(util.flagColor); 
 
+      const labelMap = {
+        good_flag: 'Good',
+        bad_flag: 'Bad',
+        no_flag: 'No_Flag'
+      };
+
+      const legendPadding = 10;        // 图例之间的间距
+      const colorBoxSize = 14;         // 色块大小
+      const colorTextGap = 6;          // 色块与文字间距
+      const fontSize = 12;
+
       // 6. 创建 SVG
       this.svg = container
         .append('svg')
@@ -246,26 +256,51 @@ export default {
         .append('g')
         .attr('transform', `translate(${this.margin.left},${this.margin.top})`);
       
-      const legend = this.svg.append('g')
-        .attr('class', 'legend')
-        .attr('transform', `translate(0, -10)`); // 向上移动，放在柱状图上方
+      
+      // 2. 创建图例容器 group
+      const legendGroup = this.svg.append('g')
+        .attr('class', 'legend-group');
 
-      seriesNames.forEach((key, i) => {
-        const legendRow = legend.append('g')
-          .attr('transform', `translate(${i * 120}, 0)`); // 水平排列
+      // 3. 单个图例项的绘制
+      const legendItems = legendGroup.selectAll('.legend-item')
+        .data(seriesNames)
+        .enter()
+        .append('g')
+        .attr('class', 'legend-item');
 
-        legendRow.append('rect')
-          .attr('width', 18)
-          .attr('height', 18)
-          .attr('fill', colorScale(key));
+      // 添加色块
+      legendItems.append('rect')
+        .attr('width', colorBoxSize)
+        .attr('height', colorBoxSize)
+        .attr('fill', d => colorScale(d))
+        .attr('y', -colorBoxSize / 2);
 
-        legendRow.append('text')
-          .attr('x', 24)
-          .attr('y', 13)
-          .text(key.replace('_flag', '')) // 如 good/bad/noflag
-          .style('font-size', '12px')
-          .style('fill', '#333');
+      // 添加文字
+      legendItems.append('text')
+        .text(d => labelMap[d] || d)
+        .attr('x', colorBoxSize + colorTextGap)
+        .attr('y', 0)
+        .attr('dy', '0.35em') // 垂直对齐居中
+        .style('font-size', `${fontSize}px`)
+        .style('fill', '#333');
+
+      // 4. 动态计算每个图例项的宽度并定位
+      let offsetX = 0;
+      legendItems.each(function(_, i) {
+        const item = d3.select(this);
+        const textWidth = item.select('text').node().getBBox().width;
+        const totalWidth = colorBoxSize + colorTextGap + textWidth;
+
+        item.attr('transform', `translate(${offsetX}, 0)`);
+        offsetX += totalWidth + legendPadding;
       });
+
+      // 5. 将整个图例 group 移动到右上角
+      const totalLegendWidth = offsetX;
+      legendGroup.attr(
+        'transform',
+        `translate(${this.width - totalLegendWidth}, ${-this.margin.top / 2})`
+      );
 
       const showAxis = false;
 
@@ -328,45 +363,13 @@ export default {
      * @param {Object} event D3 事件对象
      */
 
-    // emitBrush(xScale, categories, event) {
-    //   const allRects = this.svg.selectAll('.series-group rect');
-
-    //   if (!event.selection) {
-    //     // 👉 没有刷选，恢复所有柱子的原始颜色和不透明度
-    //     allRects
-    //       .attr('fill-opacity', 1);
-    //     this.$emit('timeBrushed', null);
-    //     return;
-    //   }
-
-    //   const [x0, x1] = event.selection;
-    //   const selectedCats = categories.filter(cat => {
-    //     const xPos = xScale(cat);
-    //     const bw = xScale.bandwidth();
-    //     return (xPos + bw > x0 && xPos < x1);
-    //   });
-
-    //   if (selectedCats.length === 0) return;
-
-    //   const startTime = selectedCats[0];
-    //   const endTime = selectedCats[selectedCats.length - 1];
-
-    //   // ✅ 只改变透明度，不改变颜色
-    //   allRects
-    //     .attr('fill-opacity', (d, i, nodes) => {
-    //       const cat = categories[i];
-    //       return selectedCats.includes(cat) ? 1 : 0.3; // 0.3 表示“变浅”
-    //     });
-
-    //   this.$emit('timeBrushed', [startTime, endTime]);
-    // }
     emitBrush(xScale, categories, event) {
       const allRects = this.svg.selectAll('.series-group rect');
       const timePointCount = categories.length;
 
       if (!event.selection) {
         allRects.attr('fill-opacity', 1);
-        this.$emit('timeBrushed', null);
+        this.$emit('timeBrushed', []);
         return;
       }
 
@@ -393,7 +396,7 @@ export default {
         const sorted = [...selectedSet].sort();
         this.$emit('timeBrushed', [sorted[0], sorted[sorted.length-1]]);
       } else {
-        this.$emit('timeBrushed', null);
+        this.$emit('timeBrushed', []);
       }
     }
   }

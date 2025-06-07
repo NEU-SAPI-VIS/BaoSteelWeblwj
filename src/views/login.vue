@@ -3,7 +3,7 @@
     <div class="layer">
       <div class="some-space">
         <div class="form">
-          <h2>基于大数据可视化的厚板厚度<br />质量诊断与生产序列推荐系统</h2>
+          <h2>基于大数据可视化的厚板性能<br />质量智能监控与异常诊断系统</h2>
           <div class="item">
             <i class="fa fa-user fa-2x"></i>
             <input autocomplete="off" type="text" class="input" v-model="userInfo.name" placeholder="请输入用户名" />
